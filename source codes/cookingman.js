@@ -83,28 +83,21 @@ el = 0;
 		
 		newImg.setAttribute("onClick","back('"+ids+"')");
 		document.getElementById("choice").appendChild(newImg);
-		no_ing++;
-		foodChoices.push(_name);
-		el = 1;
-		}else{
-		if(el == 1){
-		var div3 = document.createElement("div");
-		div3.setAttribute("id","check");
-		document.getElementById("choice").appendChild(div3);
-		var p = document.createElement("p");
-		p.setAttribute("id","check1");
-		p.setAttribute("onClick","checkIng("+_obj.name+")");
-		document.getElementById("check").appendChild(p);
-		document.getElementById("check1").innerHTML = "Check Ingredients";
-		/* var a = document.createElement("a");
-		a.setAttribute("id","a");
-		a.setAttribute("onClick","checkIng()")
-		document.getElementById("check1").appendChild(a);
-		document.getElementById("a").innerHTML = "Check Ingredients";
-	*/
-		el=0;
-		}
 		
+		foodChoices.push(_name);
+		
+		if(no_ing == _obj.ing.length-1){
+			
+				var div3 = document.createElement("div");
+				div3.setAttribute("id","check");
+				document.getElementById("choice").appendChild(div3);
+				var p = document.createElement("p");
+				p.setAttribute("id","check1");
+				p.setAttribute("onClick","checkIng("+_obj.name+")");
+				document.getElementById("check").appendChild(p);
+				document.getElementById("check1").innerHTML = "Check Ingredients";
+		}
+		no_ing++;
 		}
 	}
 	function checkIng(_obj) {

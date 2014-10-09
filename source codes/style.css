@@ -131,8 +131,9 @@ height:70%;
 	border-radius: 9px 0px;
 }
 #manong{
-	left:-1%;
-	top: 10%;
+	position:fixed;
+	left:-5%;
+	top: 25%;
 }
 #list {
 	background: rgba(102, 51, 0, 0.5);
@@ -173,7 +174,8 @@ height:70%;
 	transition: all 0.7s ease;
 }
 #introMeals{
-
+	position:fixed;
+	left: 35%;
 }
 /*STORE CSS*/
 #store{

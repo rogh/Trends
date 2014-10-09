@@ -1,12 +1,3 @@
-//var adobo = {bawang,toyo,suka,baboy,tubig,asukal,bayleaves,mantika}
-//var kaldereta = {mantika,potato,liverspread,beef,water,sili,cheese,peas,carrots}
-//var karekare = {beef,water,sitaw,pechay,talong,sibuyas,bawang,peanutbutter,liverspread,toyo}
-
-
-//var newadobo = {}
-//var newkaldereta = {}
-//var newkarekare = {}+
-
 //setTimeout("changeImg()",3000);
 
 var no_ing = 0;

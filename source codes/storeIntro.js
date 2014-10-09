@@ -1,4 +1,5 @@
 //
+//comment
 function Store(name){
 	this.name = name;
 	this.imageLink = "resources/images/meals/storesPNG/" + this.name + ".png";

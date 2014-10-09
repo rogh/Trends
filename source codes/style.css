@@ -135,6 +135,17 @@ height:70%;
 	left:-3%;
 	top: 25%;
 }
+.meal1{
+background: rgba(255,255,204,1);
+padding-left:1em;
+vertical-align:center;
+border-radius: 9px 0px;
+}
+.meal1:hover{
+background: rgba(255,204,153,.5);
+transition: all 0.7s ease;
+}
+}
 #list {
 	background: rgba(102, 51, 0, 0.5);
 	position:fixed;

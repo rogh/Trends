@@ -132,7 +132,7 @@ height:70%;
 }
 #manong{
 	position:fixed;
-	left:-5%;
+	left:-3%;
 	top: 25%;
 }
 #list {
@@ -173,9 +173,15 @@ height:70%;
 	border: 2px solid #fff;
 	transition: all 0.7s ease;
 }
+#cm{
+	font-weight:bold;
+	font-size:40px;
+}
 #introMeals{
 	position:fixed;
 	left: 35%;
+	top:25%;
+	font-size:25px;
 }
 /*STORE CSS*/
 #store{

@@ -1,13 +1,10 @@
 
 body {
-	background-image: url(resources/page/bg.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	position:relative;
+	font-family:Segoe UI;
 }
 a{
  color: black;
+ text-decoration:none;
 	}
 a:visted {
 	color: black;
@@ -16,22 +13,20 @@ a:hover{
 	color: gray;
 	}
 #heading{
-	 background: rgba(200, 54, 54, 0.5);
 	width: 100%;
-	height: 10%;
+	height: 30%;
 	font-size: 70px;
 	border-radius: 10px;
 	position:fixed;
 	top:-10px;
 	left:-1px;
 	margin:auto;
-	text-align:center;
-	font-family: Berlin Sans fb;
+
 	padding-bottom: .2em;
 }
 #content{
 
-	 background: rgba(200, 54, 54, 0.5);
+	background: rgba(255,255,102,0.5);
 	margin: auto;
 	width: 100%;
 	height: 68%;
@@ -45,22 +40,27 @@ a:hover{
 
 }
 #navigation{
-
-	-webkit-border-radius: 9px 0px;
-	-moz-border-radius: 9px 0px;
-	border-radius: 9px 0px;
-	 background: rgba(200, 54, 54, 0.5);
-	width: 100%;
-	font-family: Berlin Sans fb;
-	height: 10%;
-	margin: auto;
-	font-size: 19px;
-	
+	font-size: 25px;
+	padding-left:0.5em;
 	position:fixed;
-	top:77px;
-	text-align:center;
-	left:-1px;
+	top:7%;
+	left:50%;
+	
 }
+.navi{
+background: rgba(192, 192,192, 0.6);
+padding:0.1em;
+}
+.navi:hover{
+	opacity: 1;
+	background: rgba(255,255,225,0.5);
+	transition: all 0.7s ease;
+}
+#foot{
+	background: rgba(255,255,225, 0.5);
+	text-align:center;
+	font-weight:bold;
+	}
 #listofing{
 	background-color:maroon;
 	overflow: scroll;
@@ -85,23 +85,16 @@ a:hover{
 	font-weight:bold;
 	}
 #footer{
-	 background: rgba(200, 54, 54, 0.5);
+	background-image:url(resources/images/FOOTER.png);
 	width: 100%;
 	height: 9%;
 	margin: auto;
-	font-size: 19px;
 	border-radius: 10px;
 	position:fixed;
 	top:605px;
-	text-align:center;
 	left:-1px;
 }
-#Manong {
 
-	position:fixed;
-	top:200px;
-	left:1%
-}	
 #mealList{
 overflow:scroll;
 height:70%;
@@ -126,8 +119,8 @@ height:70%;
 }
 #mealcateg{
 	background: rgba(102, 51, 0, 0.5);
-height:55%;
-width:20%;
+	height:55%;
+	width:20%;
 	position:fixed;
 	top:200px;
 	left:1%;

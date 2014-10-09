@@ -32,7 +32,6 @@ a:hover{
 	position:fixed;
 	top:140px;
 	overflow: auto;
-	text-align:center;
 	border-radius: 10px;
 
 
@@ -48,13 +47,13 @@ a:hover{
 }
 .navi{
 
-background: rgba(192, 192,192, 0.6);
+background: rgba(255,255,225,0.5);
 padding:0.1em;
 border-radius:5px;
 }
 .navi:hover{
 	opacity: 1;
-	background: rgba(255,255,225,0.5);
+	background: rgba(255,255,204,0.5);
 	transition: all 0.7s ease;
 }
 #foot{
@@ -132,6 +131,7 @@ height:70%;
 	border-radius: 9px 0px;
 }
 #manong{
+	left:-1%;
 	top: 10%;
 }
 #list {
@@ -172,7 +172,9 @@ height:70%;
 	border: 2px solid #fff;
 	transition: all 0.7s ease;
 }
+#introMeals{
 
+}
 /*STORE CSS*/
 #store{
 	opacity: .99%;

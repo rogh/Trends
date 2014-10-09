@@ -4,7 +4,7 @@ var no_ing = 0;
 var num = 1;
 var el = 0;
 var foodChoices= [];
-
+//setTimeout("changeImg()",1000);
 function changeImg(){
 	if(num ==1){
 		document.getElementById("manong").setAttribute("src","resources/images/manong"+num+".png");

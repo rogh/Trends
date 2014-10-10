@@ -62,15 +62,29 @@ border-radius:5px;
 	font-weight:bold;
 	}
 #listofing{
-	background-color:maroon;
-	overflow: scroll;
+	background:rgba(255, 204, 153, 0.5);
+	overflow: auto;
+	position:fixed;
+	left:23%;
+	top:153px;
 	height:30%;
+	width:75%;
+	border-radius: 9px;
 	}
 #choice{
-	background-color:maroon;
-	overflow: scroll;
-	height:70%;
+	background:rgba(255, 204, 153, 0.5);
+	position:fixed;
+	left:23%;
+	top:380px;
+	overflow: auto;
+height:30%;
+width:75%;
+	border-radius: 9px;
 	}
+#name{
+	text-align:center;
+}
+
 #check{
 	background-color:transparent;
 	height:30%;
@@ -96,8 +110,8 @@ border-radius:5px;
 }
 
 #mealList{
-overflow:scroll;
-height:70%;
+overflow:auto;
+height:74%;
 }
 #check1{
 	color: white;
@@ -118,17 +132,13 @@ height:70%;
 
 }
 #mealcateg{
-	background: rgba(102, 51, 0, 0.5);
-	height:55%;
+	background: rgba(255, 204, 153, 0.5);
+	height:65%;
 	width:20%;
 	position:fixed;
-	top:200px;
-	left:1%;
-	
-		
-	-webkit-border-radius: 9px 0px;
-	-moz-border-radius: 9px 0px;
-	border-radius: 9px 0px;
+	top:153px;
+	left:2%;
+	border-radius: 9px;
 }
 #manong{
 	position:fixed;
@@ -147,13 +157,12 @@ transition: all 0.7s ease;
 }
 }
 #list {
-	background: rgba(102, 51, 0, 0.5);
+	background:rgba(255, 204, 153, 0.5);
 	position:fixed;
-	top:200px;
-	left:22%;
+	left:50%;
 	height:55%;
-	width:75%;
-		-webkit-border-radius: 9px 0px;
+	width:55%;
+	-webkit-border-radius: 9px 0px;
 	-moz-border-radius: 9px 0px;
 	border-radius: 9px 0px;
 }	
@@ -166,10 +175,10 @@ transition: all 0.7s ease;
 	margin:auto;
 }
 #meal {
-	padding: .3em;
+	padding: .2em;
 	vertical-align: middle;
 	text-align: center;
-	background: brown;
+	background: rgba(255,153,153,.5);
 	width: 90%;
 	height: auto;
 	margin: 5px;
@@ -180,7 +189,7 @@ transition: all 0.7s ease;
 }
 #meal:hover{
 	opacity: 1;
-	background: #f30;
+	background: rgba(255,204,204,.5);
 	border: 2px solid #fff;
 	transition: all 0.7s ease;
 }

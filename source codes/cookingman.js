@@ -24,13 +24,17 @@ function Recipe(_name){
 
 var alling = new Recipe("alling");
 var adobo = new Recipe("adobo");
-var kaldereta = new Recipe("Kaldereta");
-var karekare = new Recipe("Kare Kare");
+var kaldereta = new Recipe("kaldereta");
+var karekare = new Recipe("karekare");
+var tinola = new Recipe("tinola");
+var pinakbet = new Recipe("pinakbet");
 
-alling.ing= ["beef","sitaw","pechay","talong","sibuyas","bawang","peanutbutter","alamang","toyo","suka","baboy","tubig","asukal","bayleaves","mantika","patatas","liverspread","sili","cheese","peas","carrots"];
+alling.ing= ["beef","manok","kamatis","sayote","malunggay","luya","paminta","asin","okra","sitaw","pechay","talong","sibuyas","bawang","peanutbutter","alamang","toyo","suka","baboy","tubig","asukal","bayleaves","mantika","patatas","liverspread","sili","cheese","peas","carrots"];
 adobo.ing = ["bawang","toyo","suka","baboy","tubig","asukal","bayleaves","mantika"];
-kaldereta.ing = ["mantika","patatas","liverspread","beef","water","sili","cheese","peas","carrots","toyo"];
-karekare.ing = ["beef","water","sitaw","pechay","talong","sibuyas","bawang","peanutbutter","alamang"];
+kaldereta.ing = ["mantika","patatas","liverspread","beef","tubig","sili","cheese","peas","carrots","toyo"];
+karekare.ing = ["beef","tubig","sitaw","pechay","talong","sibuyas","bawang","peanutbutter","alamang"];
+tinola.ing=["manok","malunggay","sayote","tubig","mantika","luya","bawang","sibuyas"];
+pinakbet.ing=["baboy","bawang","kamatis","asin","luya","paminta","sibuyas","tubig","kalabasa","alamang","okra","sitaw","talong",];
 
 console.log(adobo);
 console.log(kaldereta);
@@ -71,61 +75,82 @@ el = 0;
 	}
 	}
 	function addToChoice(_name,_obj){
-	
+		var num = _obj.ing.length;
 		if (no_ing < _obj.ing.length) {
 
 		var newImg = document.createElement("img");
-		newImg.setAttribute("src","resources/meals/alling/"+_name +".png");
+		newImg.setAttribute("src","resources/meals/alling/"+_name+".png");
 		newImg.setAttribute("height","100px");
 		var z = _name + 1;
 		newImg.setAttribute("id",z);
-		var ids = z;
 		
-		newImg.setAttribute("onClick","back('"+ids+"')");
+		newImg.setAttribute("onClick","back('"+z+"','"+_name+"',"+num+")");
 		document.getElementById("choice").appendChild(newImg);
 		
 		foodChoices.push(_name);
 		
 		if(no_ing == _obj.ing.length-1){
 			
-				var div3 = document.createElement("div");
-				div3.setAttribute("id","check");
-				document.getElementById("choice").appendChild(div3);
-				var p = document.createElement("p");
+				var p = document.createElement("img");
 				p.setAttribute("id","check1");
+				p.setAttribute("src","resources/images/button.png");
 				p.setAttribute("onClick","checkIng("+_obj.name+")");
-				document.getElementById("check").appendChild(p);
-				document.getElementById("check1").innerHTML = "Check Ingredients";
-		}
+				p.setAttribute("height","80px");
+				document.getElementById("choice").appendChild(p);
+				}
 		no_ing++;
 		}
 	}
 	function checkIng(_obj) {
-		foodChoices.sort();
-		_obj.ing.sort();
-		
+		var temp1=foodChoices;
+		var temp2=_obj.ing;
+		temp1.sort();
+		temp2.sort();
+		var diff = 0;
 		for ( var i = 0; i < _obj.ing.length; i++) {
-			if(_obj.ing[i] == foodChoices[i]) {	
-				alert("Tama");
+			if(temp2[i] == temp1[i]) {	
+				
 			}
 			else {
-				alert("mali");
+				diff = 1;
 				i = _obj.ing.length;
 			}
+			
+		}
+		if(diff == 0){
+		var h = document.createElement("img");
+				h.setAttribute("id","check2");
+				h.setAttribute("src","resources/images/button1.png");
+				h.setAttribute("height","80px");
+				h.setAttribute("onClick","cook("+_obj+")");
+				document.getElementById("choice").appendChild(h);
+		}else{
+			alert("Ooops. A unknown ingredient is on your list!");
+			console.log(foodChoices);
 		}
 	}
 	
-	function back(_name){
+	function back(_name,_name1,_obj){
 		no_ing=no_ing-1;
 		var elem = document.getElementById(_name);
 		elem.parentNode.removeChild(elem);
-		if(no_ing < foodChoices.length){
-			var elem1 = document.getElementById("check");
-			elem1.parentNode.removeChild(elem1);
+		console.log(_name1);
+		var index = foodChoices.indexOf(_name1);
+		delete foodChoices[index];
+		//foodChoices.splice(_name1,1);
+		console.log(foodChoices);
+		
+		if(no_ing == _obj-1){
 			var elem2 = document.getElementById("check1");
 			elem2.parentNode.removeChild(elem2);
+			var elem3 = document.getElementById("check2");
+			elem3.parentNode.removeChild(elem3);
 		}
 	
+	}
+	function cook(_obj){
+	console.log(_obj.name);
+		document.getElementById("content").innerHTML = '';
 	}
 	
 

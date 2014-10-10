@@ -114,21 +114,27 @@ overflow:auto;
 height:74%;
 }
 #check1{
-	color: white;
-	font-family:berlin Sans fb;
-	font-weight:bold;
-	
+	position:fixed;
+	left:85%;
+	top: 70%;
 	padding: .3em;
 	vertical-align: middle;
 	text-align: center;
 	background: gray;
-	width: auto;
-	height: auto;
 	margin: 5px;
-	
-	-webkit-border-radius: 9px 0px;
-	-moz-border-radius: 9px 0px;
-	border-radius: 9px 0px;
+	border-radius: 9px ;
+
+}
+#check2{
+	position:fixed;
+	left:85%;
+	top: 70%;
+	padding: .3em;
+	vertical-align: middle;
+	text-align: center;
+	background: gray;
+	margin: 5px;
+	border-radius: 9px ;
 
 }
 #mealcateg{

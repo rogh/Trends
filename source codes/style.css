@@ -209,6 +209,40 @@ transition: all 0.7s ease;
 	top:25%;
 	font-size:25px;
 }
+#table{
+background-image:url(resources/images/table.png);
+background-repeat:no-repeat;
+background-size: 100%;
+	position:fixed;
+	top: 70%;
+	left:1%;
+	width:100%;
+	height: 32%;
+	color:transparent;
+}
+#stove{
+background-image:url(resources/images/stove.png);
+background-repeat:no-repeat;
+background-size: 100%;
+	position:fixed;
+	top: 25%;
+	left:61%;
+	width:40%;
+	height: 55%;
+	color:transparent;
+}
+#cookingset{
+	position:fixed;
+	left: 10%;
+	top: 63%;
+	width:80%;
+}
+#cookingset1{
+	position:fixed;
+	left: 15%;
+	top: 68%;
+	width:80%;
+}
 /*STORE CSS*/
 
 #store{

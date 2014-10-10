@@ -25,6 +25,7 @@ a:hover{
 }
 #content{
 	border: 6px solid rgba(255, 204,153, 0.5);
+	background-color: #e5eecc;
 	margin: auto;
 	width: 98%;
 	height: 68%;
@@ -221,14 +222,13 @@ background-size: 100%;
 	color:transparent;
 }
 #stove{
-background-image:url(resources/images/stove.png);
-background-repeat:no-repeat;
-background-size: 100%;
+	background: rgba(50,50,50,0.5);
+	background-repeat:no-repeat;
+	background-size: 100%;
 	position:fixed;
-	top: 25%;
-	left:61%;
-	width:40%;
-	height: 55%;
+	height:68%;
+	overflow:auto;
+	width:12%;
 	color:transparent;
 }
 #cookingset{

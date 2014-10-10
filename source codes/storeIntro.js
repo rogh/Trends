@@ -494,4 +494,5 @@ function showKabigting(){
 		img.setAttribute("height","100px");
 		document.getElementById("frontKabigting").appendChild(img);
 	}
-} // aling norma
+} // aling norma';
+

@@ -1,4 +1,16 @@
-
+#flip
+{
+padding:0px;
+text-align:center;
+background-color:#e5eecc;
+border:solid 1px #c3c3c3;
+}
+#panel
+{
+display:none;
+height:auto;
+border:solid 1px #c3c3c3;
+}
 #storedrinks{
 	width:	50%;
 	height:	200%;
@@ -94,6 +106,7 @@
 	margin-left: 40px;
 }
 #storebanapple{
+	position:relative;
 	width:	80%;
 	height: 10%;
 	font-size: 19px;

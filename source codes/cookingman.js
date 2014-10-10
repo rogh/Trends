@@ -159,39 +159,15 @@ el = 0;
 			document.getElementById("content").appendChild(stove)
 			document.getElementById("stove").innerHTML = 'hello	';
 		
-		var table = document.createElement("div");
-			table.setAttribute("id","table");
-			document.getElementById("content").appendChild(table);
-			document.getElementById("table").innerHTML = 'hello	';
-				
-		var cookingset = document.createElement("div");
-				cookingset.setAttribute("id","cookingset");
-				cookingset.setAttribute("height","30%");
-				document.getElementById("content").appendChild(cookingset);
-				
-		var cookingset1 = document.createElement("div");
-				cookingset1.setAttribute("id","cookingset1");
-				cookingset1.setAttribute("height","30%");
-				document.getElementById("content").appendChild(cookingset1);
-		
 		var count = oName.ing.length;
 		for (var i = 0; i< count; i++){
-			if(i<=7){
-			var img = document.createElement("img");
-				img.setAttribute("src","resources/meals/alling-noname/"+oName.ing[i]+".png");
-				img.setAttribute("height","100px");
-				img.setAttribute("class", "tocook");
-				img.setAttribute("id",""+oName.ing[i]+"");
-				document.getElementById("cookingset").appendChild(img);
-			}else if(i>7){
 				var img = document.createElement("img");
 				img.setAttribute("src","resources/meals/alling-noname/"+oName.ing[i]+".png");
 				img.setAttribute("height","100px");
 				img.setAttribute("class", "tocook");
 				img.setAttribute("id",""+oName.ing[i]+"");
-				document.getElementById("cookingset1").appendChild(img);
-			}
-		
+				document.getElementById("stove").appendChild(img);
+				
 		}
 		
 	}

@@ -8,6 +8,14 @@
 </head>
 
 <body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
 <img id="heading" src="resources/images/cover.png"></img>
 <div id="navigation">
 	<span class="navi"><a href="HomePage.html">HOME</a></span>
@@ -19,7 +27,8 @@
 </script>
 <div id="content"><!-- STORES -->
 	<div id="storebreakfast">
-		<p> <center>TOP 5 BREAKFAST RESTAURANTS</p>
+		<div id="flip"><p> <center>TOP 5 BREAKFAST RESTAURANTS</p></div>	
+		<div id="panel">
 		<div id="storebanapple" class="flip-container"  ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
 				<div id="frontBanapple">
@@ -27,7 +36,8 @@
 				</div>
 				<div id="backBanapple">
 					<img id="store" src="resources/images/meals/back/Banapple.png" height="240" width="300"/>
-				</div>					
+				</div>	
+			</div>
 			</div>
 		</div>
 		

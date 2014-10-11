@@ -53,7 +53,7 @@ el = 0;
 	
 	document.getElementById("list").innerHTML = '';
 
-	
+	//commment
 	var div = document.createElement("div");
 	div.setAttribute("id","listofing");
 	document.getElementById("list").appendChild(div);
